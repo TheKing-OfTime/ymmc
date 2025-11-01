@@ -33,7 +33,15 @@ export default function Home() {
                 YMMC
               </span>
               {version && (
-                <Chip size="sm" color="secondary" variant="solid" className="font-semibold">
+                <Chip 
+                  size="sm" 
+                  variant="solid" 
+                  className={`font-semibold ${
+                    isDark 
+                      ? "bg-purple-600 text-white" 
+                      : "bg-purple-700 text-white"
+                  }`}
+                >
                   {version}
                 </Chip>
               )}
