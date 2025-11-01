@@ -9,8 +9,8 @@ interface FooterProps {
 }
 
 const footerTexts = {
-  en: "Not affiliated with Yandex. Made with opensource and ❤️ by Artem | TheKingOfTime & community.",
-  ru: "Не связано с Яндексом. Сделано с открытым исходным кодом и ❤️ Артёмом | TheKingOfTime и сообществом.",
+  en: "Not affiliated with Yandex. Made with opensource and ❤️ by Artem Matvienko| TheKingOfTime & community.",
+  ru: "Не связано с Яндексом. Сделано с открытым исходным кодом и ❤️ Артёмом Матвиенко | TheKingOfTime и сообществом.",
 };
 
 export function Footer({ isDark }: FooterProps) {
