@@ -2,7 +2,7 @@
 
 [![Downloads](https://img.shields.io/github/downloads/TheKing-OfTime/YandexMusicModClient/total?label=Downloads&color=blue)](https://github.com/TheKing-OfTime/YandexMusicModClient/releases)
 [![Stars](https://img.shields.io/github/stars/TheKing-OfTime/YandexMusicModClient?style=social)](https://github.com/TheKing-OfTime/YandexMusicModClient)
-[![Discord](https://img.shields.io/discord/YOUR_DISCORD_ID?label=Discord&logo=discord)](https://discord.gg/HGNKDxwHEH)
+[![Discord](https://img.shields.io/discord/1271568115662061730?label=Discord&logo=discord)](https://discord.gg/HGNKDxwHEH)
 
 A powerful modification for the Yandex Music Desktop application that adds essential features missing from the vanilla client.
 
