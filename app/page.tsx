@@ -10,6 +10,7 @@ import {
   Divider,
   Link,
 } from "@heroui/react";
+import { VibeBackground } from "./components/VibeBackground";
 
 export default function Home() {
   const features = [
@@ -46,9 +47,11 @@ export default function Home() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-pink-50 to-blue-50 dark:from-gray-900 dark:via-purple-900 dark:to-blue-900">
-      {/* Header */}
-      <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-white/70 dark:bg-gray-900/70 border-b border-gray-200 dark:border-gray-800">
+    <>
+      <VibeBackground />
+      <div className="min-h-screen relative">
+        {/* Header */}
+        <header className="fixed top-0 z-50 w-full backdrop-blur-md bg-white/10 dark:bg-black/10 border-b border-white/20 dark:border-white/10">
         <div className="container mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-2">
             <span className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
@@ -86,7 +89,7 @@ export default function Home() {
           <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent">
             Yandex Music Mod Client
           </h1>
-          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-800 dark:text-gray-200 mb-8 max-w-2xl mx-auto font-medium">
             Enhance your Yandex Music experience with powerful features missing
             from the vanilla client
           </p>
@@ -120,22 +123,22 @@ export default function Home() {
 
         {/* Stats */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
-          <Card>
+          <Card className="bg-white/80 dark:bg-black/80 backdrop-blur-md border border-white/20">
             <CardBody className="text-center">
               <p className="text-4xl font-bold text-purple-600">514+</p>
-              <p className="text-gray-600 dark:text-gray-400">GitHub Stars</p>
+              <p className="text-gray-700 dark:text-gray-300">GitHub Stars</p>
             </CardBody>
           </Card>
-          <Card>
+          <Card className="bg-white/80 dark:bg-black/80 backdrop-blur-md border border-white/20">
             <CardBody className="text-center">
               <p className="text-4xl font-bold text-pink-600">10K+</p>
-              <p className="text-gray-600 dark:text-gray-400">Downloads</p>
+              <p className="text-gray-700 dark:text-gray-300">Downloads</p>
             </CardBody>
           </Card>
-          <Card>
+          <Card className="bg-white/80 dark:bg-black/80 backdrop-blur-md border border-white/20">
             <CardBody className="text-center">
               <p className="text-4xl font-bold text-blue-600">15+</p>
-              <p className="text-gray-600 dark:text-gray-400">Features</p>
+              <p className="text-gray-700 dark:text-gray-300">Features</p>
             </CardBody>
           </Card>
         </div>
@@ -147,16 +150,21 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {features.map((feature, index) => (
-              <Card key={index} className="hover:scale-105 transition-transform">
+              <Card
+                key={index}
+                className="hover:scale-105 transition-transform bg-white/80 dark:bg-black/80 backdrop-blur-md border border-white/20"
+              >
                 <CardHeader className="flex gap-3">
                   <span className="text-3xl">{feature.icon}</span>
                   <div className="flex flex-col">
-                    <p className="text-lg font-semibold">{feature.title}</p>
+                    <p className="text-lg font-semibold text-gray-900 dark:text-white">
+                      {feature.title}
+                    </p>
                   </div>
                 </CardHeader>
-                <Divider />
+                <Divider className="bg-white/20" />
                 <CardBody>
-                  <p className="text-gray-600 dark:text-gray-400">
+                  <p className="text-gray-700 dark:text-gray-300">
                     {feature.description}
                   </p>
                 </CardBody>
@@ -166,9 +174,11 @@ export default function Home() {
         </div>
 
         {/* Installation */}
-        <Card className="mb-20">
+        <Card className="mb-20 bg-white/80 dark:bg-black/80 backdrop-blur-md border border-white/20">
           <CardHeader>
-            <h2 className="text-3xl font-bold">🚀 Quick Installation</h2>
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+              🚀 Quick Installation
+            </h2>
           </CardHeader>
           <CardBody className="gap-4">
             <div className="flex gap-3 items-start">
@@ -239,31 +249,34 @@ export default function Home() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="border-t border-gray-200 dark:border-gray-800 py-8">
-        <div className="container mx-auto px-6 text-center text-gray-600 dark:text-gray-400">
-          <p className="mb-2">
-            Not affiliated with Yandex. Community-driven project under MIT
-            License.
-          </p>
-          <div className="flex gap-4 justify-center">
-            <Link
-              href="https://github.com/TheKing-OfTime/YandexMusicModClient"
-              isExternal
-              size="sm"
-            >
-              Main Repository
-            </Link>
-            <Link
-              href="https://discord.gg/HGNKDxwHEH"
-              isExternal
-              size="sm"
-            >
-              Discord Community
-            </Link>
+        {/* Footer */}
+        <footer className="border-t border-white/20 dark:border-white/10 py-8 backdrop-blur-sm bg-white/5 dark:bg-black/5">
+          <div className="container mx-auto px-6 text-center text-gray-800 dark:text-gray-200">
+            <p className="mb-2">
+              Not affiliated with Yandex. Community-driven project under MIT
+              License.
+            </p>
+            <div className="flex gap-4 justify-center">
+              <Link
+                href="https://github.com/TheKing-OfTime/YandexMusicModClient"
+                isExternal
+                size="sm"
+                className="text-gray-700 dark:text-gray-300"
+              >
+                Main Repository
+              </Link>
+              <Link
+                href="https://discord.gg/HGNKDxwHEH"
+                isExternal
+                size="sm"
+                className="text-gray-700 dark:text-gray-300"
+              >
+                Discord Community
+              </Link>
+            </div>
           </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </>
   );
 }
