@@ -64,7 +64,7 @@ export default function Home() {
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-white/20 dark:border-white/10 py-8 backdrop-blur-sm bg-white/5 dark:bg-black/5">
+        <footer className="border-t border-white/20 dark:border-white/10 py-6 backdrop-blur-sm bg-white/5 dark:bg-black/5">
           <div className="container mx-auto px-6">
             <div className="flex gap-6 justify-between items-center flex-wrap">
               <p
@@ -76,66 +76,66 @@ export default function Home() {
                 community
               </p>
 
-              <div className="flex gap-6 items-center flex-wrap">
-                <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-purple-500/20 to-purple-600/20 backdrop-blur-sm border border-purple-500/30">
-                <span className="text-2xl">⭐</span>
-                <div className="flex flex-col">
-                  <span
-                    className={`text-xs ${
-                      isDark ? "text-gray-400" : "text-gray-600"
-                    }`}
-                  >
-                    GitHub Stars
-                  </span>
-                  <span
-                    className={`text-lg font-bold ${
-                      isDark ? "text-purple-300" : "text-purple-700"
-                    }`}
-                  >
-                    514+
-                  </span>
+              <div className="flex gap-3 items-center flex-wrap">
+                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-purple-500/20 to-purple-600/20 backdrop-blur-sm border border-purple-500/30">
+                  <span className="text-xl">⭐</span>
+                  <div className="flex items-baseline gap-1.5">
+                    <span
+                      className={`text-base font-bold ${
+                        isDark ? "text-purple-300" : "text-purple-700"
+                      }`}
+                    >
+                      514+
+                    </span>
+                    <span
+                      className={`text-xs ${
+                        isDark ? "text-gray-400" : "text-gray-600"
+                      }`}
+                    >
+                      stars
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-pink-500/20 to-pink-600/20 backdrop-blur-sm border border-pink-500/30">
-                <span className="text-2xl">📥</span>
-                <div className="flex flex-col">
-                  <span
-                    className={`text-xs ${
-                      isDark ? "text-gray-400" : "text-gray-600"
-                    }`}
-                  >
-                    Downloads
-                  </span>
-                  <span
-                    className={`text-lg font-bold ${
-                      isDark ? "text-pink-300" : "text-pink-700"
-                    }`}
-                  >
-                    10K+
-                  </span>
+                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-pink-500/20 to-pink-600/20 backdrop-blur-sm border border-pink-500/30">
+                  <span className="text-xl">📥</span>
+                  <div className="flex items-baseline gap-1.5">
+                    <span
+                      className={`text-base font-bold ${
+                        isDark ? "text-pink-300" : "text-pink-700"
+                      }`}
+                    >
+                      10K+
+                    </span>
+                    <span
+                      className={`text-xs ${
+                        isDark ? "text-gray-400" : "text-gray-600"
+                      }`}
+                    >
+                      downloads
+                    </span>
+                  </div>
                 </div>
-              </div>
 
-              <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm border border-blue-500/30">
-                <span className="text-2xl">✨</span>
-                <div className="flex flex-col">
-                  <span
-                    className={`text-xs ${
-                      isDark ? "text-gray-400" : "text-gray-600"
-                    }`}
-                  >
-                    Features
-                  </span>
-                  <span
-                    className={`text-lg font-bold ${
-                      isDark ? "text-blue-300" : "text-blue-700"
-                    }`}
-                  >
-                    15+
-                  </span>
+                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-sm border border-blue-500/30">
+                  <span className="text-xl">✨</span>
+                  <div className="flex items-baseline gap-1.5">
+                    <span
+                      className={`text-base font-bold ${
+                        isDark ? "text-blue-300" : "text-blue-700"
+                      }`}
+                    >
+                      15+
+                    </span>
+                    <span
+                      className={`text-xs ${
+                        isDark ? "text-gray-400" : "text-gray-600"
+                      }`}
+                    >
+                      features
+                    </span>
+                  </div>
                 </div>
-              </div>
             </div>
             </div>
           </div>
