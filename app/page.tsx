@@ -71,13 +71,14 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="flex-1 container mx-auto px-6 pt-32 pb-20 flex flex-col items-center justify-center gap-12">
+        <main className="flex-1 container mx-auto px-6 flex flex-col items-center justify-between">
+          <div className="flex-1" />
+          
+          {/* Hero Content */}
+          <div className="flex flex-col items-center gap-12">
           {/* Hero Title */}
           <div className="text-center space-y-4">
-            <h1 
-              className="text-6xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent uppercase"
-              style={isDark ? { WebkitTextStroke: '1px rgba(255, 255, 255, 0.3)' } : {}}
-            >
+            <h1 className="text-6xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent uppercase">
               Yandex Music Mod Client
             </h1>
             <p className={`text-2xl font-caveat ${
@@ -120,6 +121,9 @@ export default function Home() {
           }`}>
             ⚠️ This modification does NOT provide free access to Yandex Music features. An active subscription is still required to use the service.
           </p>
+          </div>
+          
+          <div className="flex-1" />
         </main>
 
         {/* Footer */}
