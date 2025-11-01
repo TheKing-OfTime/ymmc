@@ -74,9 +74,9 @@ export default function Home() {
             <h1 className="text-6xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600 bg-clip-text text-transparent uppercase">
               Yandex Music Mod Client
             </h1>
-            <p className={`text-xl font-medium ${
+            <p className={`text-2xl font-caveat ${
               isDark ? "text-gray-200" : "text-gray-800"
-            }`}>
+            }`} style={{ fontFamily: "var(--font-caveat)" }}>
               Enhance your Yandex Music experience with powerful features
             </p>
           </div>
