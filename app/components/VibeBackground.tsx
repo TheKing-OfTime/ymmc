@@ -1,11 +1,13 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { Button } from "@heroui/react";
+import { useEffect, useRef } from "react";
 
-export function VibeBackground() {
+interface VibeBackgroundProps {
+  isDark: boolean;
+}
+
+export function VibeBackground({ isDark }: VibeBackgroundProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const [isDark, setIsDark] = useState(true);
   const animationRef = useRef<any>(null);
 
   useEffect(() => {
@@ -94,28 +96,14 @@ export function VibeBackground() {
   }, [isDark]);
 
   return (
-    <>
-      <div className="fixed inset-0 -z-10">
-        <canvas
-          ref={canvasRef}
-          className="w-full h-full"
-          style={{
-            background: isDark ? "#000000" : "#ffffff",
-          }}
-        />
-      </div>
-      
-      {/* Theme Switcher */}
-      <div className="fixed bottom-8 right-8 z-50">
-        <Button
-          isIconOnly
-          variant="flat"
-          className="bg-white/10 backdrop-blur-md"
-          onPress={() => setIsDark(!isDark)}
-        >
-          {isDark ? "🌞" : "🌙"}
-        </Button>
-      </div>
-    </>
+    <div className="fixed inset-0 -z-10">
+      <canvas
+        ref={canvasRef}
+        className="w-full h-full"
+        style={{
+          background: isDark ? "#000000" : "#ffffff",
+        }}
+      />
+    </div>
   );
 }
