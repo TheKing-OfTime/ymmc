@@ -20,8 +20,8 @@ export function ThemeSwitcher({ onThemeChange }: ThemeSwitcherProps) {
         onClick={() => handleChange(true)}
         className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
           isDark
-            ? "bg-white/90 text-gray-900 shadow-sm"
-            : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
+            ? "bg-white/90 dark:bg-white/90 text-gray-900 shadow-sm"
+            : "text-gray-700 hover:text-gray-900"
         }`}
       >
         🌙 Dark
@@ -30,8 +30,8 @@ export function ThemeSwitcher({ onThemeChange }: ThemeSwitcherProps) {
         onClick={() => handleChange(false)}
         className={`px-3 py-1.5 rounded-full text-sm font-medium transition-all ${
           !isDark
-            ? "bg-white/90 text-gray-900 shadow-sm"
-            : "text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200"
+            ? "bg-white/90 dark:bg-white/90 text-gray-900 shadow-sm"
+            : "text-gray-700 hover:text-gray-900"
         }`}
       >
         🌞 Light
