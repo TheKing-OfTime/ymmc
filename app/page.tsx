@@ -105,7 +105,7 @@ export default function Home() {
               </p>
 
               <div className="flex gap-3 items-center flex-wrap">
-                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-purple-500/20 to-purple-600/20 backdrop-blur-md border border-purple-400/40 shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105">
+                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-purple-500/15 to-purple-600/15 backdrop-blur-md border border-purple-400/25 shadow-lg hover:shadow-purple-500/50 transition-all hover:scale-105">
                   <span className="text-xl drop-shadow-lg">⭐</span>
                   <div className="flex items-baseline gap-1.5">
                     <span
@@ -125,7 +125,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-pink-500/20 to-pink-600/20 backdrop-blur-md border border-pink-400/40 shadow-lg hover:shadow-pink-500/50 transition-all hover:scale-105">
+                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-pink-500/15 to-pink-600/15 backdrop-blur-md border border-pink-400/25 shadow-lg hover:shadow-pink-500/50 transition-all hover:scale-105">
                   <span className="text-xl drop-shadow-lg">📥</span>
                   <div className="flex items-baseline gap-1.5">
                     <span
@@ -145,7 +145,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-blue-500/20 to-blue-600/20 backdrop-blur-md border border-blue-400/40 shadow-lg hover:shadow-blue-500/50 transition-all hover:scale-105">
+                <div className="flex items-center gap-3 px-5 py-1.5 rounded-full bg-gradient-to-r from-blue-500/15 to-blue-600/15 backdrop-blur-md border border-blue-400/25 shadow-lg hover:shadow-blue-500/50 transition-all hover:scale-105">
                   <span className="text-xl drop-shadow-lg">✨</span>
                   <div className="flex items-baseline gap-1.5">
                     <span
