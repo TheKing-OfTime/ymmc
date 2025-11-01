@@ -85,14 +85,19 @@ export function VibeBackground({ isDark }: VibeBackgroundProps) {
   }, []);
 
   useEffect(() => {
-    if (animationRef.current) {
-      animationRef.current.postMessage({
-        type: "vibe-animation-worker-apply-settings",
-        payload: {
-          backgroundColor: isDark ? 0 : 1,
-        },
-      });
-    }
+    // Wait a bit to ensure worker is ready
+    const timer = setTimeout(() => {
+      if (animationRef.current) {
+        animationRef.current.postMessage({
+          type: "vibe-animation-worker-apply-settings",
+          payload: {
+            backgroundColor: isDark ? 0 : 1,
+          },
+        });
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
   }, [isDark]);
 
   return (
