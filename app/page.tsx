@@ -63,8 +63,32 @@ export default function Home() {
           </div>
         </header>
 
-        <main className="flex-1 container mx-auto px-6 pt-32 pb-20">
-          {/* Content removed - only background, nav and footer remain */}
+        <main className="flex-1 container mx-auto px-6 pt-32 pb-20 flex items-center justify-center">
+          <div className="flex gap-6 items-center flex-wrap justify-center">
+            {/* Download Button - Yandex Yellow Style */}
+            <Button
+              as={Link}
+              href="https://github.com/TheKing-OfTime/YandexMusicModPatcher"
+              isExternal
+              size="lg"
+              className="px-16 py-6 text-lg font-medium bg-[#ffcc00] text-black hover:bg-[#ffdb4d] active:bg-[#e6b800] transition-all shadow-lg hover:shadow-xl rounded-full"
+            >
+              Download
+            </Button>
+
+            {/* Donate Button - Boosty Image */}
+            <Link
+              href="https://boosty.to/thekingoftime/donate"
+              isExternal
+              className="transition-all hover:scale-105 hover:opacity-90 flex items-center"
+            >
+              <img
+                src="https://github.com/user-attachments/assets/7b341f16-6513-4138-a3c5-b5892b062f63"
+                alt="Support on Boosty"
+                className="h-[52px] w-auto rounded-2xl shadow-lg"
+              />
+            </Link>
+          </div>
         </main>
 
         {/* Footer */}
